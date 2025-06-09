@@ -18,12 +18,12 @@ const Satellite = () => {
 
   return (
     <div className='relative grid justify-center items-center  h-screen w-full'>
-      <Canvas camera={{ position: [0, 0, 25], fov: 47 }} style={{width:'100vw',height:'120vh'}}
-      className=' z-3 absolute h-full w-full translate-y-[-15rem] md:translate-y-[-5rem]'
+      <Canvas camera={{ position: [0, 0, 25], fov: 47 }} style={{width:'100vw',height:'120vh',touchAction:'auto'}}
+      className=' touch-pan-y z-3 absolute h-full w-full translate-y-[-8rem] md:translate-y-[-5rem]'
     >
         <ambientLight intensity={10} />
         <directionalLight color='blue' position={[0, 5, 5]} intensity={10} />
-        <OrbitControls enableZoom={false} enablePan enableRotate />
+        <OrbitControls enableZoom={false} enablePan={false} enableRotate />
         <Suspense>
           <Model />
         </Suspense>

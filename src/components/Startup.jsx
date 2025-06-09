@@ -14,7 +14,7 @@ const Startup = ({ setLoading }) => {
         onEnd={() => setLoading(false)}
       >
         {({ countUpRef }) => (
-          <div className="h-screen flex flex-col gap-5 justify-center items-center place-items-center border-2 border-white font-space">
+          <div className="h-screen flex flex-col gap-5 justify-center items-center place-items-center font-space">
             <motion.p
               initial={{ y: 0 }}
               animate={{ y: -600 }}
