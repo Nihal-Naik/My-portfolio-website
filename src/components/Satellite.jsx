@@ -23,7 +23,6 @@ const Satellite = () => {
     >
         <ambientLight intensity={10} />
         <directionalLight color='blue' position={[0, 5, 5]} intensity={10} />
-        <OrbitControls enableZoom={false} enablePan={false} enableRotate />
         <Suspense>
           <Model />
         </Suspense>

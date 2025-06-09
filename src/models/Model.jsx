@@ -7,6 +7,7 @@ import { flipskill } from '../features/detect/skillSlice'
 import {flipexp} from '../features/detect/expSlice'
 import { flipeducation } from '../features/detect/educationSlice'
 import { flipproject } from '../features/detect/projectSlice'
+import { degToRad } from 'three/src/math/MathUtils.js'
 
 export function Model(props) {
   const dispatch=useDispatch()
@@ -34,8 +35,8 @@ export function Model(props) {
   const animate = useRef()
   useFrame(() => {
     if (!animate.current) return
-    animate.current.rotation.x += 0.003
-    animate.current.rotation.y += 0.003
+    animate.current.rotation.z += 0.003
+    // animate.current.rotation.y += 0.003
   })
   const {viewport}=useThree((state)=>state.viewport)
 
@@ -43,7 +44,7 @@ export function Model(props) {
   const Satelliteresponsive=Math.min(Math.max( window.innerWidth/1300,0.45),1.1)
 
   return (
-    <group  ref={animate} {...props} dispose={null} scale={Satelliteresponsive}>
+    <group  ref={animate} {...props} dispose={null} rotation-y={degToRad(45)} scale={Satelliteresponsive}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         {/* Meshes */}
         <mesh
