@@ -30,7 +30,7 @@ const Variants = {
 const Experience = () => {
     const dispatch=useDispatch()
   return (
-    <motion.div initial="hidden" animate="visible" exit="exit" variants={containerVariants} className="left-8 sm:left-0 absolute top-0 flex sm:p-10 box-border z-40 justify-center items-center w-[100vw]">
+    <motion.div initial="hidden" animate="visible" exit="exit" variants={containerVariants} className="left-8 sm:left-0 absolute top-15 md:top-0 flex sm:p-10 box-border z-40 justify-center items-center w-[100vw]">
       <motion.div variants={containerVariants} className="bg-[rgba(0,0,0,0.6)] grid gap-4 justify-center items-center w-full p-[10%] ">
               <motion.h1 variants={Variants} className='text-white text-2xl md:text-4xl font-space'>Intern Web Developer at Genora Infotech.</motion.h1>
               <motion.ul className='text-white text-xs md:text-lg font-space list-disc'>

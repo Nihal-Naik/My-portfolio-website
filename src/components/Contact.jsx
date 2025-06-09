@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact = () => {
+const Contact = ({contactref}) => {
     const [result, setResult] = React.useState("");
 
     const onSubmit = async (event) => {
@@ -27,7 +27,7 @@ const Contact = () => {
   };
 
   return (
-    <div className='md:mt-[5%] mb-[5%] font-space relative grid gap-3 justify-center m-auto items-center'>
+    <div ref={contactref} className='md:mt-[5%] mb-[5%] font-space relative grid gap-3 justify-center m-auto items-center'>
       <div className='bg-[rgba(0,0,0,0.6)] rounded-xl  pt-10 pb-20 pr-30 pl-30'>
         <h1 className='text-white text-3xl sm:text-5xl text-center mb-4'>Contact me</h1>
         <form onSubmit={onSubmit} className='  grid justify-center  text-white text-lg '>

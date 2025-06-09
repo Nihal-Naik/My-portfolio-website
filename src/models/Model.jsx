@@ -13,20 +13,15 @@ export function Model(props) {
   const dispatch=useDispatch()
 
   const displayskill=() => {
-    console.log("skill clicked");
-    
     dispatch(flipskill())
   }
   const displayexp=() => {
-    console.log("exp clicked");
     dispatch(flipexp())
   }
   const displayeducation=() => {
-    console.log("ed clicked");
     dispatch(flipeducation())
   }
   const displayproject=()=>{
-    console.log("project clicked");
     dispatch(flipproject())
   }
   
@@ -36,12 +31,11 @@ export function Model(props) {
   useFrame(() => {
     if (!animate.current) return
     animate.current.rotation.z += 0.003
-    // animate.current.rotation.y += 0.003
   })
   const {viewport}=useThree((state)=>state.viewport)
 
   const { nodes, materials } = useGLTF('/scene.gltf')
-  const Satelliteresponsive=Math.min(Math.max( window.innerWidth/1300,0.45),1.1)
+  const Satelliteresponsive=Math.min(Math.max( window.innerWidth/1300,0.5),1.1)
 
   return (
     <group  ref={animate} {...props} dispose={null} rotation-y={degToRad(45)} scale={Satelliteresponsive}>

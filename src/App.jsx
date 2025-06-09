@@ -6,6 +6,7 @@ import { ReactLenis, useLenis } from 'lenis/react'
 import { motion } from 'motion/react'
 import Startup from './components/Startup'
 import Contact from './components/Contact'
+import Navbar from './components/Navbar'
 
 
 const App = () => {
@@ -13,6 +14,7 @@ const App = () => {
   const lenis = useLenis(({ scroll }) => {
 
   })
+  const contactref = useRef()
 
 
   return (
@@ -23,12 +25,11 @@ const App = () => {
         </motion.div> 
         :
         <ReactLenis root>
+          <Navbar contactref={contactref} satelliteref={satelliteref} />
           <div className='' style={{ backgroundImage: `url(${bglayer})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}>
             <Homeparallax />
             <Satellite />
-            
-            <Contact />
-            {/* <div className='h-400'></div> */}
+            <Contact contactref={contactref} />
           </div>
         </ReactLenis>
       }
