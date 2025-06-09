@@ -37,7 +37,7 @@ const Variants = {
 const Project = () => {
     const dispatch=useDispatch()
     return (
-        <motion.div initial="hidden" animate="visible" exit="exit" variants={containerVariants} className="left-8 sm:left-0 absolute top-0 flex p-0 sm:p-10 box-border z-40 justify-center items-center w-[100vw]">
+        <motion.div initial="hidden" animate="visible" exit="exit" variants={containerVariants} className="left-1/2 -translate-x-1/2 top-[-10rem] md:top-0 absolute  flex p-0 sm:p-10 box-border z-40 justify-center items-center w-[100vw]">
             <motion.div variants={containerVariants} className="bg-[rgba(0,0,0,0.6)] grid grid-cols-3 grid-rows-2 md:grid-rows-2  justify-center gap-2 w-full p-[2%] rounded-2xl ">
                 <motion.div variants={Variants} className='flex font-space justify-around items-center text-white p-[5%] gap-2 col-span-2 md:col-span-1 row-span-1 bg-[rgba(0,0,0,0.6)] rounded-2xl'>
                     <div>

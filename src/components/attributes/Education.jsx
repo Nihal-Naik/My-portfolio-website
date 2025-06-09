@@ -31,7 +31,7 @@ const Variants = {
 const Education = () => {
     const dispatch=useDispatch()
     return (
-        <motion.div initial="hidden" animate="visible" exit="exit" variants={containerVariants} className="left-8 sm:left-0 absolute top-0 flex p-0 sm:p-10 box-border z-40 justify-center items-center w-[100vw]">
+        <motion.div initial="hidden" animate="visible" exit="exit" variants={containerVariants} className="left-1/2 -translate-x-1/2  absolute top-0 flex p-0 sm:p-10 box-border z-40 justify-center items-center w-[100vw]">
             <motion.div variants={containerVariants} className="bg-[rgba(0,0,0,0.6)] grid grid-cols-4 grid-rows-2 md:grid-rows-3 gap-2 justify-center  w-full p-[2%] rounded-2xl h-full">
                 <motion.div variants={Variants} className='grid font-space text-white p-[5%] gap-2 col-span-2 row-span-1 bg-[rgba(0,0,0,0.6)] rounded-2xl'>
                     <div className='flex justify-between'>

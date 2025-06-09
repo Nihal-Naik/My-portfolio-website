@@ -57,7 +57,7 @@ const Skills = () => {
           initial="hidden"
           animate="visible"
           exit="exit"
-          className=" sm:left-0 absolute top-15 md:top-0 flex sm:p-5  z-40 justify-center items-center w-full"
+          className=" left-1/2 -translate-x-1/2 absolute top-15 md:top-0 flex sm:p-5  z-40 justify-center items-center w-full"
         >
           <div className="bg-[rgba(0,0,0,0.6)] grid justify-center items-center w-full p-2 rounded-2xl ">
             <motion.div

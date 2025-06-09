@@ -32,7 +32,7 @@ const Homeparallax = () => {
                   (
                     <motion.h1 initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.4,ease:'easeIn'}} className='font-space text-4xl sm:text-6xl md:text-7xl'>Hello</motion.h1>
                   ):(
-                    <TypeAnimation className='font-space text-4xl sm:text-6xl md:text-7xl '
+                    <TypeAnimation className='font-space text-3xl sm:text-6xl md:text-7xl '
                       sequence={[
                         1000,
                         'My name is Nihal Naik.', 1500,
