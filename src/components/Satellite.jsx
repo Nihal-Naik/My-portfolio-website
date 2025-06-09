@@ -9,7 +9,7 @@ import Education from './attributes/Education'
 import Project from './attributes/Project'
 
 
-const Satellite = ({satelliteref}) => {
+const Satellite = () => {
   const toggleskill=useSelector((state)=>state.skill.value)
   const toggleexp=useSelector((state)=>state.exp.value)
   const toggleed=useSelector((state)=>state.education.value)

@@ -25,8 +25,8 @@ const App = () => {
         </motion.div> 
         :
         <ReactLenis root>
-          <Navbar contactref={contactref} satelliteref={satelliteref} />
-          <div className='' style={{ backgroundImage: `url(${bglayer})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}>
+          <Navbar contactref={contactref}/>
+          <div className='relative w-full' style={{ backgroundImage: `url(${bglayer})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}>
             <Homeparallax />
             <Satellite />
             <Contact contactref={contactref} />
