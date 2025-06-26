@@ -39,7 +39,7 @@ const Homeparallax = () => {
                         'I am a\n Web Developer.', 1500,
                       ]}
                       speed={5}
-                      repeat={Infinity}
+                      repeat={0}
                       deletionSpeed={50}
                       style={{ whiteSpace: 'pre-line' }}
                       
