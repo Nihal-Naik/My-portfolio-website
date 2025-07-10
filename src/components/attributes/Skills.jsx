@@ -8,6 +8,7 @@ import {
 import { SiMongodb } from 'react-icons/si';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { TbBrandThreejs } from 'react-icons/tb';
+import { SiTypescript } from "react-icons/si";
 import { motion } from 'framer-motion';
 import { flipskill } from '../../features/detect/skillSlice';
 import { useDispatch, useSelector } from 'react-redux';
@@ -21,6 +22,7 @@ const MotionFaReact = motion(FaReact);
 const MotionSiMongodb = motion(SiMongodb);
 const MotionRiTailwindCssFill = motion(RiTailwindCssFill);
 const MotionTbBrandThreejs = motion(TbBrandThreejs);
+const MotionSiTypescript=motion(SiTypescript)
 
 // Animation variants
 const containerVariants = {
@@ -96,6 +98,10 @@ const Skills = () => {
               <div className='flex flex-col justify-center items-center'>
                 <MotionTbBrandThreejs variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>THREE JS</p>
+              </div>
+              <div className='flex flex-col justify-center items-center'>
+                <MotionSiTypescript variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <p className='font-space text-white text-md md:text-2xl'>TYPESCRIPT</p>
               </div>
             </motion.div>
             <motion.p

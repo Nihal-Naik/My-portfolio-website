@@ -6,6 +6,7 @@ import { flipproject } from '../../features/detect/projectSlice';
 import ytcf from '../../assets/images/ytcf-logo.svg'
 import mjta from '../../assets/images/mjta.svg'
 import mtlt from '../../assets/images/mtlt.svg'
+import mrca from '../../assets/images/mrca.svg'
 
 const containerVariants = {
 
@@ -53,7 +54,7 @@ const Project = () => {
                         </a>
                     </div>
                 </motion.div>
-                <motion.div variants={Variants} className='flex justify-around items-center font-space text-white p-[5%] gap-2 col-span-3 md:col-span-2 row-span-1 bg-[rgba(0,0,0,0.6)] rounded-2xl'>
+                <motion.div variants={Variants} className='flex justify-around items-center font-space text-white p-[5%] gap-2 col-span-3 md:col-span-1 row-span-1 bg-[rgba(0,0,0,0.6)] rounded-2xl'>
                     <div>
                         <img src={mjta} alt="" className='h-40 rounded-2xl' />
                         <p>Job Application Tracker</p>
@@ -64,7 +65,7 @@ const Project = () => {
                         </a>
                     </div>
                 </motion.div>
-                <motion.div variants={Variants} className='flex justify-around items-centercursor-pointer  font-space text-white p-[5%] gap-2 col-span-3 md:col-span-2 row-span-1 bg-[rgba(0,0,0,0.6)] rounded-2xl'>
+                <motion.div variants={Variants} className='flex justify-around items-centercursor-pointer  font-space text-white p-[5%] gap-2 col-span-3 md:col-span-1 row-span-1 bg-[rgba(0,0,0,0.6)] rounded-2xl'>
                     <div>
                         <img src={mtlt} alt="" className='h-40 rounded-2xl' />
                         <p>ToDo List</p>
@@ -77,6 +78,22 @@ const Project = () => {
                             <CgMediaLive className='cursor-pointer text-[rgba(255,255,255,0.6)]  md:text-5xl text-4xl hover:text-white transition duration-150' />
                         </a>
                     </div>
+                   
+                </motion.div>
+                <motion.div variants={Variants} className='flex justify-around items-centercursor-pointer  font-space text-white p-[5%] gap-2 col-span-3 md:col-span-2 row-span-1 bg-[rgba(0,0,0,0.6)] rounded-2xl'>
+                    <div>
+                        <img src={mrca} alt="" className='h-40 rounded-2xl' />
+                        <p>Real Time Chat App</p>
+                    </div>
+                    <div className='grid gap-10'>
+                        <a href="https://github.com/Nihal-Naik/Let-s-Converse--Mern-real-time-chat-app-" target="_blank">
+                            <FaGithub className='cursor-pointer text-[rgba(255,255,255,0.6)] md:text-5xl text-4xl hover:text-white transition duration-150'/>
+                        </a>
+                        <a href="https://lets-converse.onrender.com/" target="_blank">
+                            <CgMediaLive className='cursor-pointer text-[rgba(255,255,255,0.6)]  md:text-5xl text-4xl hover:text-white transition duration-150' />
+                        </a>
+                    </div>
+                   
                 </motion.div>
                 <motion.div 
                     variants={Variants}
