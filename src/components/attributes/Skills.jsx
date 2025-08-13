@@ -66,42 +66,42 @@ const Skills = () => {
               className="grid w-full h-auto grid-cols-3 md:grid-cols-4 p-5 sm:p-15 justify-center items-center"
               variants={containerVariants}
             >
-              <div className='flex flex-col justify-center items-center'>
+              <div className='group flex flex-col justify-center items-center'>
                 <MotionFaHtml5 variants={iconVariants} whileHover={{color:'rgb(240, 101, 41)', rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
-                <p className='font-space text-white text-md md:text-2xl'>HTML</p>
+                <p className='font-space group-hover:text-[rgb(240,101,41)] transition duration-500 text-white text-md md:text-2xl'>HTML</p>
               </div>
-              <div className='flex flex-col justify-center items-center'>
+              <div className='group flex flex-col justify-center items-center'>
                 <MotionFaCss3Alt variants={iconVariants} whileHover={{color:'rgb(60, 153, 220)', rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
-                <p className='font-space text-white text-md md:text-2xl'>CSS</p>
+                <p className='font-space group-hover:text-[rgb(60,153,220)] transition duration-500 text-white text-md md:text-2xl'>CSS</p>
               </div>
-              <div className='flex flex-col justify-center items-center'>
+              <div className='group flex flex-col justify-center items-center'>
                 <MotionFaJs variants={iconVariants} whileHover={{color:'rgb(240, 219, 79)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
-                <p className='font-space text-white text-md md:text-2xl'>JAVASCRIPT</p>
+                <p className='font-space group-hover:text-[rgb(240,219,79)] transition duration-500 text-white text-md md:text-2xl'>JAVASCRIPT</p>
               </div>
-              <div className='flex flex-col justify-center items-center'>
+              <div className='group flex flex-col justify-center items-center'>
                 <MotionFaNodeJs variants={iconVariants} whileHover={{color:'rgb(104, 160, 99)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
-                <p className='font-space text-white text-md md:text-2xl'>NODE JS</p>
+                <p className='font-space group-hover:text-[rgb(104,160,99)] transition duration-500 text-white text-md md:text-2xl'>NODE JS</p>
               </div>
               
-              <div className='flex flex-col justify-center items-center'>
-                 <MotionFaReact variants={iconVariants} whileHover={{color:'rgb(97, 219, 251)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
-                <p className='font-space text-white text-md md:text-2xl'>REACT</p>
+              <div className='group flex flex-col justify-center items-center'>
+                <MotionFaReact variants={iconVariants} whileHover={{color:'rgb(97, 219, 251)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <p className='font-space group-hover:text-[rgb(97,219,251)] transition duration-500 text-white text-md md:text-2xl'>REACT</p>
               </div>
-              <div className='flex flex-col justify-center items-center'>
+              <div className='group flex flex-col justify-center items-center'>
                 <MotionSiMongodb variants={iconVariants} whileHover={{color:'rgb(77, 179, 61)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
-                <p className='font-space text-white text-md md:text-2xl'>MONGODB</p>
+                <p className='font-space group-hover:text-[rgb(77,179,61)] transition duration-500 text-white text-md md:text-2xl'>MONGODB</p>
               </div>
-              <div className='flex flex-col justify-center items-center'>
+              <div className='group flex flex-col justify-center items-center'>
                 <MotionRiTailwindCssFill variants={iconVariants} whileHover={{color:'rgb(56, 189, 248)',rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
-                <p className='font-space text-white text-md md:text-2xl'>TAILWIND</p>
+                <p className='font-space group-hover:text-[rgb(56,189,248)] transition duration-500 text-white text-md md:text-2xl'>TAILWIND</p>
               </div>
-              <div className='flex flex-col justify-center items-center'>
+              <div className='group flex flex-col justify-center items-center'>
                 <MotionTbBrandThreejs variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>THREE JS</p>
               </div>
-              <div className='flex flex-col justify-center items-center'>
+              <div className='group flex flex-col justify-center items-center'>
                 <MotionSiTypescript variants={iconVariants} whileHover={{color:'rgb(49, 120, 198)',rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
-                <p className='font-space text-white text-md md:text-2xl'>TYPESCRIPT</p>
+                <p className='font-space group-hover:text-[rgb(49,120,198)] transition duration-500 text-white text-md md:text-2xl'>TYPESCRIPT</p>
               </div>
             </motion.div>
             <motion.p
