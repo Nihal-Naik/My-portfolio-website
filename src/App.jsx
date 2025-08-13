@@ -7,7 +7,7 @@ import { motion } from 'motion/react'
 import Startup from './components/Startup'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
-import Footer from './components/footer'
+import Footer from './components/Footer'
 
 
 const App = () => {
