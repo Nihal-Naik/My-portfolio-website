@@ -7,6 +7,7 @@ import { motion } from 'motion/react'
 import Startup from './components/Startup'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
+import Footer from './components/footer'
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
             <Homeparallax />
             <Satellite />
             <Contact contactref={contactref} />
+            <Footer />
           </div>
         </ReactLenis>
       }

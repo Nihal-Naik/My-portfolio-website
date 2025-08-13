@@ -18,7 +18,7 @@ const Contact = ({contactref}) => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Form Submitted Successfully");
+      setResult("Email sent Successfully");
       event.target.reset();
     } else {
       console.log("Error", data);

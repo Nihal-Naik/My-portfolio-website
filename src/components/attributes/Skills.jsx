@@ -67,32 +67,32 @@ const Skills = () => {
               variants={containerVariants}
             >
               <div className='flex flex-col justify-center items-center'>
-                <MotionFaHtml5 variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <MotionFaHtml5 variants={iconVariants} whileHover={{color:'rgb(240, 101, 41)', rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>HTML</p>
               </div>
               <div className='flex flex-col justify-center items-center'>
-                <MotionFaCss3Alt variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <MotionFaCss3Alt variants={iconVariants} whileHover={{color:'rgb(60, 153, 220)', rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>CSS</p>
               </div>
               <div className='flex flex-col justify-center items-center'>
-                <MotionFaJs variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <MotionFaJs variants={iconVariants} whileHover={{color:'rgb(240, 219, 79)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>JAVASCRIPT</p>
               </div>
               <div className='flex flex-col justify-center items-center'>
-                <MotionFaNodeJs variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <MotionFaNodeJs variants={iconVariants} whileHover={{color:'rgb(104, 160, 99)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>NODE JS</p>
               </div>
               
               <div className='flex flex-col justify-center items-center'>
-                 <MotionFaReact variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                 <MotionFaReact variants={iconVariants} whileHover={{color:'rgb(97, 219, 251)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>REACT</p>
               </div>
               <div className='flex flex-col justify-center items-center'>
-                 <MotionSiMongodb variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <MotionSiMongodb variants={iconVariants} whileHover={{color:'rgb(77, 179, 61)',rotate:360,transition:{duration:0.5}}} className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>MONGODB</p>
               </div>
               <div className='flex flex-col justify-center items-center'>
-                 <MotionRiTailwindCssFill variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <MotionRiTailwindCssFill variants={iconVariants} whileHover={{color:'rgb(56, 189, 248)',rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>TAILWIND</p>
               </div>
               <div className='flex flex-col justify-center items-center'>
@@ -100,7 +100,7 @@ const Skills = () => {
                 <p className='font-space text-white text-md md:text-2xl'>THREE JS</p>
               </div>
               <div className='flex flex-col justify-center items-center'>
-                <MotionSiTypescript variants={iconVariants} whileHover={{rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
+                <MotionSiTypescript variants={iconVariants} whileHover={{color:'rgb(49, 120, 198)',rotate:360,transition:{duration:0.5}}}  className="text-white text-4xl sm:text-9xl p-5 box-content" />
                 <p className='font-space text-white text-md md:text-2xl'>TYPESCRIPT</p>
               </div>
             </motion.div>
