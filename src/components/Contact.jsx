@@ -31,9 +31,9 @@ const Contact = ({contactref}) => {
       <div className='bg-[rgba(0,0,0,0.6)] rounded-xl  pt-10 pb-20 pr-30 pl-30'>
         <h1 className='text-white text-3xl sm:text-5xl text-center mb-4'>Contact me</h1>
         <form onSubmit={onSubmit} className='  grid justify-center  text-white text-lg '>
-          <input className='outline-0 border-b-1 border-white p-1 mb-6' placeholder='name' type="text" name="name" required />
-          <input className='outline-0 border-b-1 border-white p-1 mb-6' placeholder='email' type="email" name="email" required />
-          <textarea className='outline-0 h-[6rem] sm:h-[8rem] w-[15rem] sm:w-[20rem] border-1 border-white p-1 mb-6' placeholder='message' name="message" required></textarea>
+          <input className='outline-0 border-b-1 border-white p-1 mb-6' placeholder='Name' type="text" name="name" required />
+          <input className='outline-0 border-b-1 border-white p-1 mb-6' placeholder='Email' type="email" name="email" required />
+          <textarea className='outline-0 h-[6rem] sm:h-[8rem] w-[15rem] sm:w-[20rem] border-1 border-white p-1 mb-6' placeholder='Type your message' name="message" required></textarea>
 
           <button className='rounded-md p-2 cursor-pointer bg-white text-black' type="submit">Submit Form</button>
 

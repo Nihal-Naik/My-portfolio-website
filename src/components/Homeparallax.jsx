@@ -4,6 +4,7 @@ import { useParallax } from 'react-scroll-parallax';
 import { motion } from 'framer-motion';
 import { TypeAnimation } from 'react-type-animation';
 
+
 const Homeparallax = () => {
 
     const fore=useParallax({speed:-100})
@@ -32,11 +33,13 @@ const Homeparallax = () => {
                   (
                     <motion.h1 initial={{opacity:0}} animate={{opacity:1}} exit={{opacity:0}} transition={{duration:0.4,ease:'easeIn'}} className='font-space text-4xl sm:text-6xl md:text-7xl'>Hello</motion.h1>
                   ):(
-                    <TypeAnimation className='font-space text-3xl sm:text-6xl md:text-7xl '
+                    
+                    
+                    <TypeAnimation className='font-space text-3xl sm:text-6xl md:text-5xl '
                       sequence={[
                         1000,
-                        'My name is Nihal Naik.', 1500,
-                        'I am a\n Web Developer.', 1500,
+                        'I am Nihal Naik.', 1500,
+                        'I am a Web Developer.', 1500,
                       ]}
                       speed={5}
                       repeat={0}

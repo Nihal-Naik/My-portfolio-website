@@ -8,6 +8,7 @@ import Startup from './components/Startup'
 import Contact from './components/Contact'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import Customcursor from './components/Customcursor'
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
         </motion.div> 
         :
         <ReactLenis root>
+          <Customcursor/>
           <Navbar contactref={contactref}/>
           <div className='relative w-full' style={{ backgroundImage: `url(${bglayer})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center', }}>
             <Homeparallax />
