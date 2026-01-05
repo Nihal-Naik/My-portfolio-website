@@ -20,9 +20,9 @@ const App = () => {
 
 
   return (
-    <div className='grid justify-center items-center overflow-scroll'>
+    <div className='grid justify-center items-center overflow-scroll cursor-auto'>
       {loading ? 
-        <motion.div exit={{opacity:0,scale:0}} className='bg-black w-[100vw] h-[100vh]'>
+        <motion.div exit={{opacity:0,scale:0}} className='bg-black w-[100vw] h-[100vh] cursor-none'>
           <Startup setLoading={setLoading} />
         </motion.div> 
         :
